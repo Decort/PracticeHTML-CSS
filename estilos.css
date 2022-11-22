@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
 }
 html {
   font-size: 62.5%;
@@ -10,6 +10,7 @@ body {
   font-size: 1.6rem;
   background-color: hsl(30, 38%, 92%);
   font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
 }
 main {
   display: flex;
@@ -17,21 +18,52 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
+  margin: 20rem;
   
 }
 .container {
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
-  width: 65rem;
-  height: 50rem;
+  min-width: 60rem;
+  min-height: 50rem;
+  display: flex;
+  flex-wrap:wrap;
+  margin: 10rem;
 }
 img {
-  height: 50rem;
+  height: 60rem;
+  min-width: 40rem;
   border-radius: 20px 0 0 20px;
 }
 .text {
   margin-left: 2rem;
   padding: 1rem;
+}
+.text p {
+  padding-bottom: 2.5rem;
+}
+.price {
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+.unstyle {
+  all: unset;
+}
+.button {
+background-color: hsl(158, 36%, 37%);
+width: 90%;
+min-height: 6vh;
+text-align: center;
+border-radius: 1rem;
+}
+span, a {
+  padding-left: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+.button:hover {
+  opacity: 80%;
+  transform: scale(1.01);
 }
 .box-info {
   display: flex;
@@ -41,3 +73,12 @@ img {
   font-family: 'fraunces', serif;
   font-size: 4rem;
 }
+button {
+  width: 70%;
+  background-color: hsl(158, 36%, 37%);
+
+
+}
+@media (min-width: 375px) {
+ 
+
